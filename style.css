@@ -1,0 +1,140 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	}
+	
+body {
+	background-color: #f7f7f7;
+	font-family: "museo-sans-1", "museo-sans-2", Museo Sans, Helvetica, Arial, sans-serif;, sans-serif;
+	font-weight: 300;
+	color: #222222;
+	line-height: 150%;
+	font-size: 1.3rem;
+	}
+
+::selection {
+	background-color: #2980b9;
+	color: #ecf0f1;
+	}
+
+	
+/* Home */
+	
+.graph {
+	background-image: url('img/graphpaper.jpg');
+	background-repeat: repeat;
+	}
+	
+.home-block img {
+	position: relative;
+	}
+
+.home-block--hi-max-here {
+	display: block;
+	top: 60px;
+	left: 100px;
+	max-width: 600px;
+	}
+	
+.home-block--just-going-to-draw {
+	top: 70px;
+	left: 110px;
+	max-width: 800px;
+	}
+	
+.home-block--cool-hr {
+	top: 100px;
+	left: 110px;
+	max-width: 900px;
+	}
+	
+.home-block--here-is-some-stuff {
+	top: 120px;
+	left: 100px;
+	max-width: 800px;
+	}
+	
+.about-me {
+	display: flex;
+	position: relative;
+	top: 150px;
+	left: 50px;
+	}
+
+.about-me--me {
+	width: 200px;
+	height: 200px;
+	}
+	
+.about-me--about-me-text {
+	background-image: url('img/about-me-text.png');
+	background-position: top left;
+	background-size: 100% auto;
+	text-indent: -9000px;
+	width: 500px;
+	height: 179px;
+	}
+	
+.about-me--about-me-text:hover {
+	background-position: bottom left;
+	}
+	
+.about-me--about-me-text a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	}
+	
+	
+/* Pages */
+
+h1, h2, h3 {
+	font-family: "brandon-grotesque-1", "brandon-grotesque-2", Brandon Grotesque, Helvetica, Arial;
+	line-height: 130%;
+	}
+	
+h1 {
+	font-size: 250%;
+	}
+	
+p a {
+	color: #2980b9;
+	padding-top: 3px;
+	}
+	
+p a:hover {
+	color: #b4daee;
+	background-color: #0a4683;
+	text-decoration: none;
+	}
+
+.corner-colors {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url('img/corner-colors.png');
+	background-size: 100% auto;
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 257px;
+	z-index: 10;
+	}
+	
+.corner-colors a,
+.corner-colors a:hover {
+	display: block;
+	width: 50%;
+	height: 50%;
+	}
+	
+.page-container {
+	margin-left: 250px;
+	margin-top: 100px;
+	max-width: 770px;
+	}
+	
+.page-container--standard-image {
+	width: 600px;
+	border: 1px solid #bcb5be;
+	}
