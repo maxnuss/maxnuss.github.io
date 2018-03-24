@@ -207,6 +207,7 @@ body {
 	width: 250px;
 	}
 	
+	
 /* Pages */
 
 h1, h2, h3 {
@@ -216,6 +217,10 @@ h1, h2, h3 {
 	
 h1 {
 	font-size: 250%;
+	}
+	
+.tiny {
+	font-size: 85%;
 	}
 	
 p a {
@@ -233,7 +238,7 @@ p a:hover {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-image: url('img/corner-colors.png');
+	background-image: url('img/corner-colors-1.png');
 	background-size: 100% auto;
 	background-position: top left;
 	background-repeat: no-repeat;
@@ -242,6 +247,19 @@ p a:hover {
 	z-index: 10;
 	}
 	
+.corner-colors-2 {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-image: url('img/corner-colors-2.png');
+	background-size: 100% auto;
+	background-position: top left;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 257px;
+	z-index: 10;
+	}
+		
 .corner-colors a,
 .corner-colors a:hover {
 	display: block;
@@ -258,6 +276,11 @@ p a:hover {
 .page-container--standard-image {
 	width: 600px;
 	border: 1px solid #bcb5be;
+	}
+	
+.page-container--cool-hr {
+	max-width: 90%;
+	margin: 30px auto;
 	}
 
 
