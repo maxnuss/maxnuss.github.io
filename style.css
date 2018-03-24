@@ -21,44 +21,42 @@ body {
 /* Home */
 	
 .graph {
-	background-image: url('img/graphpaper.jpg');
-	background-repeat: repeat;
+	background-image: url('img/notebook-edge.png'), url('img/graphpaper.jpg');
+	background-repeat: repeat-y, repeat;
 	}
 	
-.home-block img {
-	position: relative;
+.home-block {
+	margin-left: 100px;
 	}
 
 .home-block--hi-max-here {
 	display: block;
-	top: 60px;
-	left: 100px;
+	margin: 60px 0 0 0;
 	max-width: 600px;
+	width: 90%;
 	}
 	
 .home-block--just-going-to-draw {
-	top: 70px;
-	left: 110px;
+	margin: 60px 0 0 -10px;
 	max-width: 800px;
+	width: 90%;
 	}
 	
 .home-block--cool-hr {
-	top: 100px;
-	left: 110px;
+	margin: 60px 0 0 10px;
 	max-width: 900px;
+	width: 90%;
 	}
 	
 .home-block--here-is-some-stuff {
-	top: 120px;
-	left: 100px;
+	margin: 60px 0 0 0;
 	max-width: 800px;
+	width: 90%;
 	}
 	
 .about-me {
 	display: flex;
-	position: relative;
-	top: 150px;
-	left: 50px;
+	margin: 60px 0 0 -50px;
 	}
 
 .about-me--me {
@@ -75,16 +73,129 @@ body {
 	height: 179px;
 	}
 	
-.about-me--about-me-text:hover {
-	background-position: bottom left;
-	}
-	
-.about-me--about-me-text a {
+.full-image-link {
 	display: block;
 	width: 100%;
 	height: 100%;
 	}
 	
+.brand-and-design-work {
+	margin: 60px 0 0 0;
+	width: 800px;
+	height: 210px;
+	background-image: url('img/brand-and-design-work.png');
+	background-position: top left;
+	background-size: 100% auto;
+	text-indent: -9000px;
+	}	
+	
+.essay-talk-box {
+	margin: 60px 0 0 -70px;
+	width: 1000px;
+	display: flex;
+	align-items: center;
+	}
+
+.essay-talk-box--essay {
+	width: 500px;
+	height: 110px;
+	background-image: url('img/essay.png');
+	background-position: top left;
+	background-size: 100% auto;
+	text-indent: -9000px;
+	opacity: 0.8;
+	}	
+
+.essay-talk-box--talk {
+	margin-left: 40px;
+	width: 450px;
+	height: 173px;
+	background-image: url('img/talk.png');
+	background-position: top left;
+	background-size: 100% auto;
+	text-indent: -9000px;
+	}	
+
+.new-yorker {
+	margin: 60px 0 0 0;
+	width: 700px;
+	height: 214px;
+	background-image: url('img/new-yorker.png');
+	background-position: top left;
+	background-size: 100% auto;
+	text-indent: -9000px;
+	}	
+
+.home-block--cool-hr-2 {
+	margin: 60px 0 0 0px;
+	max-width: 900px;
+	width: 90%;
+	}
+
+.home-block--other-projects {
+	margin: 60px 0 0 -10px;
+	width: 900px;
+	max-width: 95%;
+	}
+	
+.notable-projects-box {
+	margin: 60px 0 0 -30px;
+	width: 1000px;
+	display: flex;
+	align-items: center;
+	}
+	
+.notable-projects-box--rebirth,
+.notable-projects-box--millionaire,
+.notable-projects-box--charlie {
+	width: 33%;
+	}
+	
+.notable-projects-box--charlie {
+	background: blue;
+	}
+	
+.notable-projects-box--rebirth-image {
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	}
+
+.notable-projects-box--rebirth-link {
+	background-image: url('img/rebirth-text.png');
+	background-position: top left;
+	background-size: 100% auto;
+	text-indent: -9000px;
+	width: 300px;
+	height: 136px;
+	margin: 0 auto;
+	}	
+
+.notable-projects-box--millionaire-link {
+	background-image: url('img/millionaire-text.png');
+	background-position: top left;
+	background-size: 100% auto;
+	text-indent: -9000px;
+	width: 300px;
+	height: 136px;
+	margin: 0 auto;
+	}	
+	
+.brand-and-design-work:hover,
+.about-me--about-me-text:hover,
+.essay-talk-box--essay:hover,
+.essay-talk-box--talk:hover,
+.new-yorker:hover,
+.notable-projects-box--rebirth-link:hover,
+.notable-projects-box--millionaire-link:hover {
+	background-position: bottom left;
+	}
+
+.home-block--signature {
+	float: right;
+	width: 250px;
+	margin-top: -100px;
+	}
 	
 /* Pages */
 
@@ -138,3 +249,84 @@ p a:hover {
 	width: 600px;
 	border: 1px solid #bcb5be;
 	}
+
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+
+	.about-me {
+		margin-left: 0;
+		}
+
+	.home-block {
+		margin-left: 50px;
+		}
+		
+	.brand-and-design-work {
+		width: 600px;
+		height: 158px;
+		}
+		
+	.essay-talk-box {
+		display: block;
+		margin-left: 0;
+		}
+		
+	.essay-talk-box--talk {
+		margin-top: 30px;
+		}
+	
+	.notable-projects-box {
+		display: block;
+		margin-left: 50px;
+		}
+
+} /* end 1000px */
+
+@media screen and (max-width: 760px) {
+
+	.about-me--about-me-text {
+		width: 350px;
+		height: 125px;
+		margin-top: 30px;
+		}
+		
+	.brand-and-design-work {
+		width: 400px;
+		height: 105px;
+		}
+		
+	.new-yorker {
+		width: 500px;
+		height: 153px;
+		}
+		
+	.home-block--signature {
+		margin: 30px 0 0 50px;
+		float: none;
+		}
+		
+} /* end 760px */
+
+@media screen and (max-width: 600px) {
+
+	.about-me {
+		display: block;
+		}
+	
+	.essay-talk-box--essay {
+		width: 350px;
+		height: 77px;
+		}	
+
+	.essay-talk-box--talk {
+		width: 350px;
+		height: 135px;
+		}	
+	
+	.new-yorker {
+		width: 300px;
+		height: 92px;
+		}
+
+} /* end 600px */
