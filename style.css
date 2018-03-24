@@ -151,14 +151,14 @@ body {
 	width: 33%;
 	}
 	
-.notable-projects-box--charlie {
-	background: blue;
-	}
-	
-.notable-projects-box--rebirth-image {
+.notable-projects-box--image {
 	width: 70%;
 	display: block;
 	margin: 0 auto;
+	}
+	
+.notable-projects-box--charlie-image {
+	width: 90%;
 	}
 
 .notable-projects-box--rebirth-link {
@@ -168,7 +168,7 @@ body {
 	text-indent: -9000px;
 	width: 300px;
 	height: 136px;
-	margin: 0 auto;
+	margin: 20px auto 0;
 	}	
 
 .notable-projects-box--millionaire-link {
@@ -178,6 +178,16 @@ body {
 	text-indent: -9000px;
 	width: 300px;
 	height: 136px;
+	margin: 30px auto 0;
+	}	
+
+.notable-projects-box--charlie-link {
+	background-image: url('img/charlie-text.png');
+	background-position: top left;
+	background-size: 100% auto;
+	text-indent: -9000px;
+	width: 300px;
+	height: 165px;
 	margin: 0 auto;
 	}	
 	
@@ -187,14 +197,14 @@ body {
 .essay-talk-box--talk:hover,
 .new-yorker:hover,
 .notable-projects-box--rebirth-link:hover,
-.notable-projects-box--millionaire-link:hover {
+.notable-projects-box--millionaire-link:hover,
+.notable-projects-box--charlie-link:hover {
 	background-position: bottom left;
 	}
 
 .home-block--signature {
 	float: right;
 	width: 250px;
-	margin-top: -100px;
 	}
 	
 /* Pages */
