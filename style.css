@@ -309,7 +309,8 @@ p a:hover {
 	}
 
 .talk-box--image {
-	max-width: 350px;
+	width: 350px;
+	max-width: 90%;
 	border: 2px solid #bbb5bd;
 	transition: all .1s ease;
 	margin-bottom: -15px;
