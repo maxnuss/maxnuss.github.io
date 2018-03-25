@@ -284,13 +284,13 @@ p a:hover {
 	}
 	
 .page-container {
-	margin-left: 250px;
-	margin-top: 100px;
+	margin: 100px 250px;
 	max-width: 770px;
 	}
 	
 .page-container--standard-image {
-	width: 600px;
+	width: 100%;
+	max-width: 600px;
 	border: 1px solid #bcb5be;
 	}
 	
@@ -321,6 +321,10 @@ p a:hover {
 
 /* Responsive */
 @media screen and (max-width: 1000px) {
+
+	body {
+		font-size: 1.2rem;
+		}
 
 	.about-me {
 		margin-left: 0;
@@ -356,8 +360,7 @@ p a:hover {
 		}
 		
 	.page-container {
-		margin-left: 150px;
-		margin-top: 50px;
+		margin: 50px 150px;
 		}
 
 } /* end 1000px */
@@ -386,13 +389,20 @@ p a:hover {
 		}
 	
 	.page-container {
-		margin-left: 120px;
-		margin-top: 20px;
+		margin: 20px 120px;
 		}
 		
 } /* end 760px */
 
 @media screen and (max-width: 600px) {
+
+	body {
+		font-size: 1rem;
+		}
+		
+	h1 {
+		font-size: 200%;
+		}
 
 	.about-me {
 		display: block;
@@ -420,8 +430,7 @@ p a:hover {
 		}
 		
 	.page-container {
-		margin-left: 100px;
-		margin-top: 30px;
+		margin: 30px 40px;
 		}
 
 } /* end 600px */
