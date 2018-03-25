@@ -92,6 +92,7 @@ body {
 .essay-talk-box {
 	margin: 60px 0 0 -70px;
 	width: 1000px;
+	max-width: 100%;
 	display: flex;
 	align-items: center;
 	}
@@ -141,6 +142,7 @@ body {
 .notable-projects-box {
 	margin: 60px 0 0 -30px;
 	width: 1000px;
+	max-width: 100%;
 	display: flex;
 	align-items: center;
 	}
@@ -403,24 +405,75 @@ p a:hover {
 	h1 {
 		font-size: 200%;
 		}
+		
+	.home-block--just-going-to-draw,
+	.home-block--cool-hr,
+	.home-block--here-is-some-stuff,
+	.brand-and-design-work,
+	.essay-talk-box,
+	.new-yorker,
+	.home-block--cool-hr-2,
+	.home-block--other-projects,
+	.home-block--cool-hr-2,
+	.home-block--signature {
+		margin: 20px 0;
+		}
 
 	.about-me {
-		display: block;
+		margin: 0;
+		}
+		
+	.about-me--me {
+		width: 100px;
+		height: 100px;
+		}
+		
+	.about-me--about-me-text {
+		width: 250px;
+		height: 89px;
+		}
+
+	.brand-and-design-work {
+		width: 300px;
+		height: 79px;
 		}
 	
 	.essay-talk-box--essay {
-		width: 350px;
-		height: 77px;
+		width: 300px;
+		height: 66px;
 		}	
 
 	.essay-talk-box--talk {
-		width: 350px;
-		height: 135px;
+		width: 300px;
+		height: 116px;
+		margin: 20px 0 0 20px;
 		}	
 	
 	.new-yorker {
 		width: 300px;
 		height: 92px;
+		}
+		
+	.notable-projects-box {
+		margin-top: 20px;
+		}
+		
+	.notable-projects-box--rebirth,
+	.notable-projects-box--millionaire,
+	.notable-projects-box--charlie {
+		width: 50%;
+		margin: 20px 0;
+		}
+		
+	.notable-projects-box--rebirth-link,
+	.notable-projects-box--millionaire-link {
+		width: 200px;
+		height: 91px;
+		}
+		
+	.notable-projects-box--charlie-link {
+		width: 200px;
+		height: 100px;
 		}
 		
 	.corner-colors,
