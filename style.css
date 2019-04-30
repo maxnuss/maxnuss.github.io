@@ -320,6 +320,13 @@ p a:hover {
 	border-color: #c77195;
 	opacity: 0.9;
 	}
+	
+.new-yorker-caption {
+	display: block;
+	margin: 0 auto;
+	width: 500px;
+	border: 1px solid black;
+}
 
 
 /* Responsive */
