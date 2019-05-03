@@ -89,6 +89,20 @@ body {
 	text-indent: -9000px;
 	}	
 	
+.oversubscribed {
+	margin: 60px 0 0 0;
+	width: 800px;
+	height: 229px;
+	background-image: url('img/oversubscribed.png');
+	background-position: top left;
+	background-size: 100% auto;
+	text-indent: -9000px;
+	}	
+
+.oversubscribed:hover {
+	background-position: bottom left;
+}
+	
 .essay-talk-box {
 	margin: 60px 0 0 -70px;
 	width: 1000px;
@@ -372,6 +386,11 @@ p a:hover {
 	.page-container {
 		margin: 50px 150px;
 		}
+		
+	.oversubscribed {
+		width: 600px;
+		height: 172px;
+		}
 
 } /* end 1000px */
 
@@ -460,6 +479,11 @@ p a:hover {
 	.new-yorker {
 		width: 300px;
 		height: 92px;
+		}
+		
+	.oversubscribed {
+		width: 400px;
+		height: 115px;
 		}
 		
 	.notable-projects-box {
