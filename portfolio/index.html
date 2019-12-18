@@ -1,139 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width">
-	<meta name="viewport" content="initial-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="initial-scale=1.0">
 
-    <title>Portfolio - &#2985;&#8896;&#1217;  &#1697;&#1488;&#2585;&#4285;&#3180;&#5819;&#2675;&#1002;&#3738;&#3433; </title>
+        <title>Portfolio - &#2985;&#8896;&#1217;  &#1697;&#1488;&#2585;&#4285;&#3180;&#5819;&#2675;&#1002;&#3738;&#3433; </title>
 
-    <link rel="stylesheet" href="styles.css">
-   
-    <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
-    
-    <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
-    
-    <script>
-jQuery(document).ready(function($) {
-	
-	$('.lightbox-trigger').click(function(e) {
-		
-		//prevent default action (hyperlink)
-		e.preventDefault();
-		
-		//Get clicked link href
-		var image_href = $(this).attr("href");
-		
-		/* 	
-		If the lightbox window HTML already exists in document, 
-		change the img src to to match the href of whatever link was clicked
-		
-		If the lightbox window HTML doesn't exists, create it and insert it.
-		(This will only happen the first time around)
-		*/
-		
-		if ($('#lightbox').length > 0) { // #lightbox exists
-			
-			//place href as img src value
-			$('#content').html('<img src="' + image_href + '" />');
-		   	
-			//show lightbox window - you could use .show('fast') for a transition
-			$('#lightbox').show();
-		}
-		
-		else { //#lightbox does not exist - create and insert (runs 1st time only)
-			
-			//create HTML markup for lightbox window
-			var lightbox = 
-			'<div id="lightbox">' +
-				'<p>Click to close</p>' +
-				'<div id="content">' + //insert clicked link's href into img src
-					'<img src="' + image_href +'" />' +
-				'</div>' +	
-			'</div>';
-				
-			//insert lightbox HTML into page
-			$('body').append(lightbox);
-		}
-		
-	});
-	
-	//Click anywhere on the page to get rid of lightbox window
-	$('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
-		$('#lightbox').hide();
-	});
+        <link rel="stylesheet" href="styles.css">
 
-});
-</script>
+        <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
 
+        <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+        
+        <link rel="stylesheet" href="https://use.typekit.net/gwb8yvz.css">
 
-  </head>
-  <body>
-  
-    <div id="lightbox">
-        <p>Click anywhere to close</p>
-        <div id="content">
-            <img src="#" />
-        </div><!--content-->
-    </div><!--lightbox-->
+        <script>
+            jQuery(document).ready(function($) {
+    
+                $('.lightbox-trigger').click(function(e) {
+        
+                    //prevent default action (hyperlink)
+                    e.preventDefault();
+        
+                    //Get clicked link href
+                    var image_href = $(this).attr("href");
+        
+                    /* 	
+                    If the lightbox window HTML already exists in document, 
+                    change the img src to to match the href of whatever link was clicked
+        
+                    If the lightbox window HTML doesn't exists, create it and insert it.
+                    (This will only happen the first time around)
+                    */
+        
+                    if ($('#lightbox').length > 0) { // #lightbox exists
+            
+                        //place href as img src value
+                        $('#content').html('<img src="' + image_href + '" />');
+            
+                        //show lightbox window - you could use .show('fast') for a transition
+                        $('#lightbox').fadeIn('fast');
+                    }
+        
+                    else { //#lightbox does not exist - create and insert (runs 1st time only)
+            
+                        //create HTML markup for lightbox window
+                        var lightbox = 
+                        '<div id="lightbox">' +
+                            '<p>Click to close</p>' +
+                            '<div id="content">' + //insert clicked link's href into img src
+                                '<img src="' + image_href +'" />' +
+                            '</div>' +	
+                        '</div>';
+                
+                        //insert lightbox HTML into page
+                        $('body').append(lightbox);
+                    }
+        
+                });
+    
+                //Click anywhere on the page to get rid of lightbox window
+                $('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+                    $('#lightbox').fadeOut('fast');
+                });
 
-    <div class="main">
-    
-    <h2>Some Previous Work</h2>
-    
-    <p class="title"><b>Castle</b></p>
-    
-    <p>My former startup, a tech-powered take on single family property management.</p>
-    
-    <ul>
-        <li><a href="http://castle.maxnuss.com">Website</a>. I designed and coded. (Archive of old site; some links may no longer work)</li>
-        <li><a href="castle/Castle_Series_A_Deck.pdf">Series A deck (PDF)</a>. I wrote and designed.</li>
-        <li><a href="castle/Getting_Started_Guide.pdf">Getting Started Guide</a>. I wrote and designed.</li>
-        <li><a href="#">TechCrunch article about us</a>, for the curious.</li>
-    </ul>
- 
-   <p class="title"><b>Eternal Roots</b></p>
-    
-    <p>Cemetery alternative that lets you spread your or a loved one&rsquo;s ashes by a tree in one of their forests. I named the company and designed the:</p>
-    
-    <ul>
-        <li><a href="eternal_roots/brand.png" class="lightbox-trigger">Branding</a></li>
-        <li><a href="eternal_roots/sales_deck.pdf">Sales deck</a> (PDF)</li>
-        <li>Landing page (coming soon).</li>
-    </ul>
+            });
+        </script>
 
-    <p class="title"><b>Gem</b></p>
+    </head>
     
-    <p>Subscription vitamin company. I designed and implemented many landing pages on their <a href="http://dailygem.co/pages/landing-2-ingredients">Shopify site</a>.</p>
+    <body>
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="top"></div>
+        <div id="bottom"></div>
+        
+        <div id="lightbox">
+            <p>Click anywhere to close</p>
+            <div id="content">
+                <img src="#" />
+            </div><!--content-->
+        </div><!--lightbox-->
 
-    <p class="title"><b>Purpose Built Ventures</b></p>
-    
-    <p>VC firm launching out of SF. I designed this <a href="Purpose_Built_logo.png" class="lightbox-trigger">logo and branding</a>.</p>
-    
+        <div class="name">Max Nussenbaum</div>
+                
+        <div class="container">
+         
+            <div class="container-inner">
+                <a href="http://phenomic.ai/" class="img-link"><img src="img/phenomic.png"></a>
+                <h3>Phenomic AI</h3>
+                <p>Leveraging computer vision and high-content screening to develop the next wave of therapeutic antibodies. I designed and implemented the <a href="http://phenomic.ai/">landing page</a>.
+            </div><!--container-inner-->
+           
+           <div class="container-inner">
+                <img src="img/eternal-roots.png">
+                <h3>Eternal Roots</h3>
+                <p>Forest-based cemetery alternative. I helped named the company and created the:</p>
+                <ul>
+                    <li><a href="eternal-roots/style-guide.pdf">Branding</a> (PDF)</li>
+                    <li><a href="eternal-roots/sales-deck.pdf">Sales deck</a> (PDF)</li>
+                    <li><a href="eternal-roots/landing-page/">Landing page</a></li>
+                </ul>
+            </div><!--container-inner-->
 
-    <p class="title"><b>Zulip</b></p>
-    
-    <p>Group chat for developers. I designed and developed this <a href="https://zulipchat.com/">website</a> based on existing brand and assets.</ul>
+            <div class="container-inner">
+                <a href="https://www.dustyrobotics.com" class="img-link"><img src="img/dusty-robotics.png"></a>
+                <h3>Dusty Robotics</h3>
+                <p>Providing automated layout services to the construction industry. I designed and implemented the <a href="https://www.dustyrobotics.com/">landing page</a>.</p>
+            </div><!--container-inner-->
 
+            <div class="container-inner">
+                <img src="img/buildforce.png">
+                <h3>Buildforce</h3>
+                <p>Construction marketplace. I designed the <a href="buildforce/branding.png" class="lightbox-trigger">logo and branding</a>.</p>
+            </div><!--container-inner-->
 
-    <p class="title"><b>Medical Guardian</b></p>
-    
-    <p>Medical device company. I designed this <a href="https://drive.google.com/open?id=1YW-cEJKcgbY65U-nJGRO82WVhTVM0oZ1">print brochure</a>(PDF) based on existing assets.</ul>
+            <div class="container-inner">
+                <img src="img/castle.png">
+                <h3>Castle</h3>
+                <p>My former startup, a tech-powered take on single family property management. As CEO, I grew the company to $1mm in annual revenue and raised $4mm from investors including Y Combinator and Khosla Ventures.</p>
+                <ul>
+                    <li><a href="http://castle.maxnuss.com">Website</a>. I designed and coded. (Archive of old site; some links may no longer work)</li>
+                    <li><a href="castle/Castle_Series_A_Deck.pdf">Series A deck</a> (PDF). I wrote and designed.</li>
+                    <li><a href="castle/Getting_Started_Guide.pdf">Getting Started Guide</a>. I wrote and designed.</li>
+                    <li><a href="#">TechCrunch article about us</a>, for the curious.</li>
+                </ul>
+            </div><!--container-inner-->
 
-    
-    <p class="title"><b>Are You a Human</b></p>
-    
-    <p>Web security tool. I designed and developed this <a href="ayah/marketing-site">website</a> based on existing brand and assets. (Archive of old site; links do not work)</ul>
+            <div class="container-inner">
+                <a href="https://zulipchat.com/"><img src="img/zulip.png"></a>
+                <h3>Zulip</h3>
+                <p>Group chat for developers. I designed and developed this <a href="https://zulipchat.com/">website</a> based on existing brand and assets.</p>
+            </div><!--container-inner-->
 
-    <p class="title"><b>Funopticon</b></p>
-    
-    <p>Event I threw in September. I designed and developed this <a href="https://funopticon.life/2019">goofy website</a>.</ul>
+            <div class="container-inner">
+                <img src="img/medical-guardian.png">
+                <h3>Medical Guardian</h3>
+                <p>Medical device company. I designed this <a href="medical-guardian/Medical_Guardian_brochure.pdf">print brochure</a> (PDF) based on existing assets.</p>
+            </div><!--container-inner-->
 
-    <p class="title"><b><a href="https://maxnuss.com">My personal website</a></b></p>
-    
-    <p>An example of the kind of work I create just for myself. Don&rsquo;t worry, most of what I do for clients is more professional than this.</ul>
-    
-    </div><!--main-->
-
-  </body>
+            <div class="container-inner">
+                <a href="http://funopticon.life/2019"><img src="img/funopticon.png"></a>
+                <h3>Funopticon</h3>
+                <p>Event I threw in September 2019. I designed and developed this <a href="http://funopticon.life/2019">goofy website</a>.</p>
+            </div><!--container-inner-->
+            
+            <div class="container-inner">
+                <a href="https://maxnuss.com"><img src="img/maxnuss-dot-com.png"></a>
+                <h3>My personal website</h3>
+                <p>An example of <a href="https://maxnuss.com">the kind of work I create just for myself</a>. Don’t worry, most of what I do for clients is more professional than this.</p>
+            </div><!--container-inner-->
+        </div><!--container-->
+                            
+    </body>
 </html>
