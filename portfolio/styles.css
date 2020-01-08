@@ -162,5 +162,9 @@ a.img-link:hover {
     .container-inner {
         width: 100%;
     }
+    
+    #top, #bottom, #left, #right {
+        border-width: 5px;
+    }
 }
 
