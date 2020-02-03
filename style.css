@@ -217,6 +217,10 @@ body {
 .notable-projects-box--charlie-link:hover {
 	background-position: bottom left;
 	}
+	
+.brand-and-design-work:hover {
+    background-position: bottom 1px left;
+}
 
 .home-block--signature {
 	float: right;
