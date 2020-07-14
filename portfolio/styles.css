@@ -218,6 +218,7 @@ a.img-link:hover {
 .centered-image {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .face-dominos {
