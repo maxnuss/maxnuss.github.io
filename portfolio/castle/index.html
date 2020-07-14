@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Castle | &#2985;&#8896;&#1217;  &#1697;&#1488;&#2585;&#4285;&#3180;&#5819;&#2675;&#1002;&#3738;&#3433;</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../slick/slick-theme.css">
+  
+  <link rel="icon" href="../../img/favicon.ico" type="image/x-icon"/> 
+  
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Slick / Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="left"></div>
+  <div id="right"></div>
+  <div id="top"></div>
+  <div id="bottom"></div>
+  
+  <div id="lightbox">
+      <p>Click anywhere to close</p>
+      <div id="content">
+          <img src="#" />
+      </div><!--content-->
+  </div><!--lightbox-->
+
+  <div class="name">Max Nussenbaum</div>
+  
+  <div class="invididual-container">
+    <div class="invididual-container__inner">
+      <img src="img/logo.png" alt="Castle" class="company-logo">
+      
+      <p>Castle was a tech-powered property management service I cofounded in 2014. We grew to $1mm ARR, got into Y Combinator (W16), and raised $4mm from Khosla Ventures, SV Angel, and Stripe cofounder John Collison, among others.</p>
+      
+      <p>As CEO, I led product, design, and marketing. I designed (and built the front-end for) the first versions of our product, personally closed our first $200k in ARR, and grew the team from three to 18.</p>
+      
+      <p>Through our web platform, property owners could track their portfolio&rsquo;s performance; monitor maintenance issues, solicit and compare bids, and approve work requests; market their properties and monitor their tenant pipeline; and control their property&rsquo;s finances.</p>
+      
+      <p>We measured success of the platform by engagement with the app and reduction in support tickets.</p>
+      
+      <script type="text/javascript">    
+        $( document ).ready(function() {
+          $('.castle-slideshow').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+      </script>
+      
+      <div class="castle-slideshow">
+        <div class="castle-slideshow__inner">
+          <img src="img/dashboard.png" alt="Owner Dashboard">
+          <div class="castle-slideshow__caption">The owner dashboard with a portfolio overview.</div>
+        </div>
+        <div class="castle-slideshow__inner">
+          <img src="img/dashboard-phone.png" alt="Dashboard Phone">
+          <div class="castle-slideshow__caption">The owner dashboard on mobile.</div>
+        </div>
+        <div class="castle-slideshow__inner">
+          <img src="img/property.png" alt="Property">
+          <div class="castle-slideshow__caption">The property page, including the timeline, a real-time feed of everything going on with a property.</div>
+        </div>
+        <div class="castle-slideshow__inner">
+          <img src="img/maintenance.png" alt="Maintenance">
+          <div class="castle-slideshow__caption">A maintenance issue. Owners could monitor issues, solicit and compare bids, approve or reject work requests, and communicate with maintenance providers.</div>
+        </div>
+        <div class="castle-slideshow__inner">
+          <img src="img/applicants.png" alt="Applicants">
+          <div class="castle-slideshow__caption">The applications view, where owners could control the marketing of their properties and track the interest a vacant unit was getting in real time.</div>
+        </div>
+      </div>
+      
+      <p>Castle experienced strong growth for a few years, but we were ultimately unable to effectively scale the company&rsquo;s on-the-ground operations. We sold off the brand and some core technology assets and wound down the company in 2018.</p>
+      
+    </div>
+  </div>
+  
+</body>
+</html>

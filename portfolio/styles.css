@@ -36,8 +36,8 @@ a.img-link:hover {
 }
 
 #left, #right {
-    top: 0;
-    bottom: 0;
+  top: 0;
+  bottom: 0;
 	width: 15px;
 }
 
@@ -50,8 +50,8 @@ a.img-link:hover {
 }
 		
 #top, #bottom {
-    left: 0;
-    right: 0;
+  left: 0;
+  right: 0;
 	height: 15px;
 }
 		
@@ -61,6 +61,16 @@ a.img-link:hover {
 
 #bottom {
     bottom: 0;
+}
+
+@media (max-width: 500px) {
+  #left, #right {
+    width: 8px;
+  }
+  
+  #top, #bottom {
+    height: 8px;
+  }
 }
 		
 .name {
@@ -216,4 +226,31 @@ a.img-link:hover {
 
 .face-dominos img {
   width: 300px;
+}
+
+.castle-slideshow {
+  margin: 30px 0;
+}
+
+@media (max-width: 500px) {
+  .castle-slideshow {
+    transform: scale(0.9);
+  }
+}
+
+.castle-slideshow img {
+  width: 100%;
+}
+
+.castle-slideshow__caption {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 10px auto 0;
+  color: #545454;
+  max-width: 550px;
+}
+
+.castle-slideshow .slick-prev:before,
+.castle-slideshow .slick-next:before {
+  color: #1972ad;
 }
