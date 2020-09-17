@@ -16,6 +16,10 @@ body {
 	background-color: #2980b9;
 	color: #ecf0f1;
 	}
+	
+img {
+  max-width: 100%;
+}
 
 	
 /* Home */
@@ -654,5 +658,10 @@ p a:hover {
   .on-deck {
     width: 350px;
     height: 186px;
+  }
+  
+  .new-yorker-caption {
+    margin: 0;
+    max-width: 80%;
   }
 }
