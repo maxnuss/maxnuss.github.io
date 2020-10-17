@@ -402,6 +402,17 @@ p a:hover {
 	.page-container {
 	  margin: 40px 0 0 160px;
   }
+  
+  .essay-talk-box--diary {
+    width: 450px;
+    height: 279px;
+  }	
+
+  .essay-talk-box--media {
+    width: 420px;
+    height: 363px;
+  }	
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -424,7 +435,6 @@ p a:hover {
 		}
 		
 	.essay-talk-box {
-		display: block;
 		margin-left: 0;
 		}
 		
@@ -451,8 +461,24 @@ p a:hover {
 		width: 600px;
 		height: 172px;
 		}
+		
+	.essay-talk-box--diary {
+    width: 300px;
+    height: 186px;
+  }	
+
+  .essay-talk-box--media {
+    width: 320px;
+    height: 277px;
+  }	
 
 } /* end 1000px */
+
+@media (max-width: 850px) {
+  .essay-talk-box {
+    display: block;
+  }
+}
 
 @media screen and (max-width: 760px) {
 
