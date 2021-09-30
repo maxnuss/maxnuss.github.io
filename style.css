@@ -256,8 +256,8 @@ img {
 .on-deck {
   background-image: url('img/on-deck.png');
   background-size: 100% auto;
-  width: 700px;
-  height: 341px;
+  width: 450px;
+  height: 158px;
   text-indent: -9000px;
   margin-top: 50px;
 }
@@ -710,7 +710,7 @@ p a:hover {
   
   .on-deck {
     width: 350px;
-    height: 170px;
+    height: 123px;
   }
   
   .new-yorker-caption {
