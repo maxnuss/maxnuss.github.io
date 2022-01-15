@@ -366,6 +366,11 @@ p a:hover {
 	max-width: 750px;
 	text-align: center;
 }
+
+.talks-media-grid--item {
+	font-size: 1.2rem;
+	line-height: 1.4;
+}
 	
 .talks-header {
   margin-left: 10px;
