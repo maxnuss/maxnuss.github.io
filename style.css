@@ -23,249 +23,99 @@ img {
 
 	
 /* Home */
-	
 .graph {
 	background-image: url('img/notebook-edge.png'), url('img/graphpaper.jpg');
 	background-repeat: repeat-y, repeat;
-	}
-	
-.home-block {
-	margin-left: 100px;
+	padding-left: 50px;
+	padding-bottom: 50px;
 	}
 
-.home-block--hi-max-here {
+.home--hi {
 	display: block;
-	margin: 60px 0 0 0;
-	max-width: 600px;
-	width: 90%;
-	}
-	
-.home-block--just-going-to-draw {
-	margin: 60px 0 0 -10px;
-	max-width: 800px;
-	width: 90%;
-	}
-	
-.home-block--cool-hr {
-	margin: 60px 0 0 10px;
-	max-width: 900px;
-	width: 90%;
-	}
-	
-.home-block--here-is-some-stuff {
-	margin: 60px 0 0 0;
-	max-width: 800px;
-	width: 90%;
-	}
-	
-.about-me {
-	display: flex;
-	margin: 60px 0 0 -50px;
-	}
+	width: 800px;
+	margin-top: 30px;
+}
 
-.about-me--me {
-	width: 200px;
-	height: 200px;
-	}
-	
-.about-me--about-me-text {
-	background-image: url('img/about-me-text.png');
-	background-position: top left;
-	background-size: 100% auto;
-	text-indent: -9000px;
-	width: 500px;
-	height: 179px;
-	}
-	
-.full-image-link {
+.home--draw {
 	display: block;
-	width: 100%;
-	height: 100%;
-}
-	
-.brand-and-design-work {
-	margin: 60px 0 0 0;
-	width: 800px;
-	height: 210px;
-	background-image: url('img/brand-and-design-work.png');
-	background-position: top left;
-	background-size: 100% auto;
-	text-indent: -9000px;
-	}	
-	
-.oversubscribed {
-	margin: 30px 0 0 0;
-	width: 800px;
-	height: 229px;
-	background-image: url('img/oversubscribed.png');
-	background-position: top left;
-	background-size: 100% auto;
-	text-indent: -9000px;
-	}	
-
-.oversubscribed:hover {
-	background-position: bottom left;
-}
-	
-.essay-talk-box {
-	margin: 10px 0 0 -70px;
-	width: 1400px;
-	max-width: 100%;
-	display: flex;
-	align-items: center;
-}
-	
-.essay-talk-box--diary {
-	width: 500px;
-	height: 310px;
-	background-image: url('img/diary.png');
-	background-position: bottom left;
-	background-size: 100% auto;
-	text-indent: -9000px;
-	margin-left: 30px;
-}	
-
-.essay-talk-box--diary:hover {
-  background-position: top left;
-}
-  
-.essay-talk-box--media {
+	width: 650px;
+	margin-top: 30px;
 	margin-left: 60px;
-	width: 450px;
-	height: 389px;
-	background-image: url('img/media.png');
-	background-position: top left;
-	background-size: 100% auto;
-	text-indent: -9000px;
-}	
-
-.essay-talk-box--media:hover {
-  background-position: bottom left;
 }
 
-@media (max-width: 600px) {
-  .essay-talk-box--diary {
-    width: 330px;
-    height: 190px;
-    margin-left: 0;
-  }
-  
-  .essay-talk-box--media {
-    width: 330px;
-    height: 279px;
-    margin-left: 0;
-  }
-}
-
-.new-yorker {
-	margin: 60px 0 0 0;
-	width: 700px;
-	height: 214px;
-	background-image: url('img/new-yorker.png');
-	background-position: top left;
-	background-size: 100% auto;
-	text-indent: -9000px;
-	}	
-
-.home-block--cool-hr-2 {
-	margin: 60px 0 0 0px;
-	max-width: 900px;
-	width: 90%;
-	}
-
-.home-block--other-projects {
-	margin: 60px 0 0 -10px;
-	width: 900px;
-	max-width: 95%;
-	}
-	
-.notable-projects-box {
-	margin: 60px 0 0 -30px;
-	width: 1000px;
-	max-width: 100%;
-	display: flex;
-	align-items: center;
-	}
-	
-.notable-projects-box--rebirth,
-.notable-projects-box--millionaire,
-.notable-projects-box--charlie {
-	width: 33%;
-	}
-	
-.notable-projects-box--image {
-	width: 70%;
+.home--know {
 	display: block;
-	margin: 0 auto;
-	}
-	
-.notable-projects-box--charlie-image {
-	width: 90%;
-	}
+	width: 650px;
+	margin-top: 30px;
+	margin-left: 60px;
+}
 
-.notable-projects-box--rebirth-link {
-	background-image: url('img/rebirth-text.png');
-	background-position: top left;
+.home-link {
+	display: block;
 	background-size: 100% auto;
-	text-indent: -9000px;
-	width: 300px;
-	height: 136px;
-	margin: 20px auto 0;
-	}	
-
-.notable-projects-box--millionaire-link {
-	background-image: url('img/millionaire-text.png');
-	background-position: top left;
-	background-size: 100% auto;
-	text-indent: -9000px;
-	width: 300px;
-	height: 136px;
-	margin: 30px auto 0;
-	}	
-
-.notable-projects-box--charlie-link {
-	background-image: url('img/charlie-text.png');
-	background-position: top left;
-	background-size: 100% auto;
-	text-indent: -9000px;
-	width: 300px;
-	height: 165px;
-	margin: 0 auto;
-	}	
-	
-.brand-and-design-work:hover,
-.about-me--about-me-text:hover,
-.essay-talk-box--essay:hover,
-.essay-talk-box--talk:hover,
-.new-yorker:hover,
-.notable-projects-box--rebirth-link:hover,
-.notable-projects-box--millionaire-link:hover,
-.notable-projects-box--charlie-link:hover {
-	background-position: bottom left;
-	}
-	
-.brand-and-design-work:hover {
-  background-position: bottom 1px left;
+	background-position: top center;
+	margin-top: 40px;
+	color: transparent;
 }
 
-.home-block--signature {
-  float: right;
-  width: 250px;
+.home-link:hover {
+	background-position: bottom center;
 }
 
-.on-deck {
-  background-image: url('img/on-deck.png');
-  background-size: 100% auto;
-  width: 450px;
-  height: 158px;
-  text-indent: -9000px;
-  margin-top: 50px;
+.home-link--candy {
+	width: 800px;
+	height: 123px;
+	background-image: url('img/candy.png');
 }
 
-.on-deck:hover {
-  background-position: center bottom;
+.home-link--on-deck {
+	width: 700px;
+	height: 131px;
+	background-image: url('img/on-deck.png');
 }
-	
+
+.home-link--oversubscribed {
+	width: 642px;
+	height: 120px;
+	background-image: url('img/oversubscribed.png');
+}
+
+.home-link--new-yorker {
+	width: 650px;
+	height: 88px;
+	background-image: url('img/new-yorker.png');
+	margin-top: 50px;
+}
+
+.home-link--new-yorker:hover {
+	background-position: center bottom 1px;
+}
+
+.home-link--talk-media {
+	width: 790px;
+	height: 135px;
+	background-image: url('img/talk-media.png');
+}
+
+.home-link--about {
+	width: 454px;
+	height: 90px;
+	background-image: url('img/about.png');
+	background-position: bottom center;
+}
+
+.home-link--about:hover {
+	background-position: top center;
+}
+
+.home--signature {
+	display: block;
+	width: 250px;
+	float: right;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
 	
 /* Pages */
 
@@ -422,22 +272,12 @@ p a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-
 	body {
 		font-size: 1.2rem;
 		}
 
 	.about-me {
 		margin-left: 0;
-		}
-
-	.home-block {
-		margin-left: 50px;
-		}
-		
-	.brand-and-design-work {
-		width: 600px;
-		height: 158px;
 		}
 		
 	.essay-talk-box {
@@ -448,11 +288,6 @@ p a:hover {
 		margin-top: 30px;
 		}
 	
-	.notable-projects-box {
-		display: block;
-		margin-left: 50px;
-		}
-	
 	.corner-colors,
 	.corner-colors-2 {
 		width: 150px;
@@ -461,11 +296,6 @@ p a:hover {
 		
 	.page-container {
 		margin: 50px 150px;
-		}
-		
-	.oversubscribed {
-		width: 600px;
-		height: 172px;
 		}
 		
 	.essay-talk-box--diary {
@@ -480,40 +310,82 @@ p a:hover {
 
 } /* end 1000px */
 
-@media (max-width: 850px) {
-  .essay-talk-box {
-    display: block;
-  }
+@media (max-width: 900px) {
+	.home--hi, .home--draw, .home--know {
+		max-width: 95%;
+	}
+	
+	.home--draw,
+	.home--know {
+		margin-left: 0;
+	}
+	
+	.home-link--candy {
+		width: 600px;
+		height: 92px;
+	}
+	
+	.home-link--on-deck {
+		width: 600px;
+		height: 112px;
+	}
+	
+	.home-link--oversubscribed {
+		width: 600px;
+		height: 112px;
+	}
+	
+	.home-link--new-yorker {
+		width: 600px;
+		height: 81px;
+	}
+	
+	.home-link--talk-media {
+		width: 600px;
+		height: 103px;
+	}
 }
 
 @media screen and (max-width: 760px) {
-
-	.about-me--about-me-text {
-		width: 350px;
-		height: 125px;
-		margin-top: 30px;
-		}
-		
-	.brand-and-design-work {
-		width: 400px;
-		height: 105px;
-		}
-		
-	.new-yorker {
-		width: 500px;
-		height: 153px;
-		}
-		
-	.home-block--signature {
-		margin: 30px 0 0 50px;
-		float: none;
-		}
 	
 	.page-container {
 		margin: 20px 120px;
 		}
 		
-} /* end 760px */
+}
+
+@media (max-width: 660px) {	
+	.home-link--candy {
+		width: 450px;
+		height: 69px;
+	}
+	
+	.home-link--on-deck {
+		width: 450px;
+		height: 84px;
+	}
+	
+	.home-link--oversubscribed {
+		width: 450px;
+		height: 84px;
+	}
+	
+	.home-link--new-yorker {
+		width: 450px;
+		height: 61px;
+	}
+	
+	.home-link--talk-media {
+		width: 450px;
+		height: 77px;
+	}
+	
+	.home--signature {
+		float: none;
+		margin: 30px auto;
+		width: 200px;
+	}
+}
 
 @media screen and (max-width: 600px) {
 
@@ -523,81 +395,6 @@ p a:hover {
 		
 	h1 {
 		font-size: 200%;
-		}
-		
-	.home-block--just-going-to-draw,
-	.home-block--cool-hr,
-	.home-block--here-is-some-stuff,
-	.brand-and-design-work,
-	.essay-talk-box,
-	.new-yorker,
-	.home-block--cool-hr-2,
-	.home-block--other-projects,
-	.home-block--cool-hr-2,
-	.home-block--signature {
-		margin: 20px 0;
-		}
-
-	.about-me {
-		margin: 0;
-		}
-		
-	.about-me--me {
-		width: 100px;
-		height: 100px;
-		}
-		
-	.about-me--about-me-text {
-		width: 250px;
-		height: 89px;
-		}
-
-	.brand-and-design-work {
-		width: 300px;
-		height: 79px;
-		}
-	
-	.essay-talk-box--essay {
-		width: 300px;
-		height: 66px;
-		}	
-
-	.essay-talk-box--talk {
-		width: 300px;
-		height: 116px;
-		margin: 20px 0 0 20px;
-		}	
-	
-	.new-yorker {
-		width: 300px;
-		height: 92px;
-		}
-		
-	.oversubscribed {
-		width: 370px;
-		height: 105px;
-		}
-		
-	.notable-projects-box {
-		margin-top: 20px;
-		}
-		
-	.notable-projects-box--rebirth,
-	.notable-projects-box--millionaire,
-	.notable-projects-box--charlie {
-		width: 50%;
-		margin: 20px 0;
-		}
-		
-	.notable-projects-box--rebirth-link,
-	.notable-projects-box--millionaire-link {
-		width: 200px;
-		height: 91px;
-		}
-		
-	.notable-projects-box--charlie-link {
-		width: 200px;
-		height: 100px;
 		}
 		
 	.corner-colors,
@@ -712,12 +509,7 @@ p a:hover {
 }
 
 @media (max-width: 700px) {
-  
-  .on-deck {
-    width: 350px;
-    height: 123px;
-  }
-  
+
   .new-yorker-caption {
     margin: 0;
     max-width: 80%;
