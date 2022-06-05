@@ -509,9 +509,45 @@ p a:hover {
 }
 
 @media (max-width: 700px) {
-
   .new-yorker-caption {
     margin: 0;
     max-width: 80%;
   }
+}
+
+@media (max-width: 500px) {
+	.graph {
+		padding-left: 30px;
+		background-size: 15px auto, auto;
+	}
+	
+	.home-link--candy {
+		width: 340px;
+		height: 52px;
+	}
+	
+	.home-link--on-deck {
+		width: 320px;
+		height: 60px;
+	}
+	
+	.home-link--oversubscribed {
+		width: 330px;
+		height: 62px;
+	}
+
+	.home-link--new-yorker {
+		width: 310px;
+		height: 42px;
+	}
+	
+	.home-link--talk-media {
+		width: 310px;
+		height: 53px;
+	}
+	
+	.home-link--about {
+		width: 300px;
+		height: 63px;
+	}
 }
