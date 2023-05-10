@@ -1,0 +1,29 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial;
+	background: #f2f2f2;
+}
+
+.box {
+	width: 700px;
+	max-width: 95%;
+	margin: 0 auto;
+	padding: 30px;
+	display: grid;
+	grid-template-columns: 250px auto;
+	grid-gap: 20px;
+	background: #fff;
+	margin-top: calc(50vh - 200px);
+	line-height: 1.5;
+	border-radius: 10px;
+}
+
+.image img {
+	width: 100%;
+	display: block;
+}
+
+b {
+	color: #b6607d;
+}
