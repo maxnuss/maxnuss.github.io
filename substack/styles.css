@@ -27,3 +27,8 @@ html, body {
 b {
 	color: #b6607d;
 }
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
