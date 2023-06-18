@@ -68,10 +68,10 @@ img {
 	background-image: url('img/candy.png');
 }
 
-.home-link--on-deck {
-	width: 700px;
-	height: 131px;
-	background-image: url('img/on-deck.png');
+.home-link--upside {
+	width: 650px;
+	height: 133px;
+	background-image: url('img/upside.png');
 }
 
 .home-link--oversubscribed {
@@ -325,9 +325,9 @@ p a:hover {
 		height: 92px;
 	}
 	
-	.home-link--on-deck {
+	.home-link--upside {
 		width: 600px;
-		height: 112px;
+		height: 123px;
 	}
 	
 	.home-link--oversubscribed {
@@ -360,14 +360,14 @@ p a:hover {
 		height: 69px;
 	}
 	
-	.home-link--on-deck {
+	.home-link--upside {
 		width: 450px;
 		height: 84px;
 	}
 	
 	.home-link--oversubscribed {
 		width: 450px;
-		height: 84px;
+		height: 92px;
 	}
 	
 	.home-link--new-yorker {
@@ -526,9 +526,9 @@ p a:hover {
 		height: 52px;
 	}
 	
-	.home-link--on-deck {
+	.home-link--upside {
 		width: 320px;
-		height: 60px;
+		height: 65px;
 	}
 	
 	.home-link--oversubscribed {
