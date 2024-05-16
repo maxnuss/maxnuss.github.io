@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="initial-scale=1.0">
+
+        <meta property="og:image" content="https://maxnuss.com/portfolio/img/meta-image.png" />
+
+        <title>Portfolio - &#2985;&#8896;&#1217;  &#1697;&#1488;&#2585;&#4285;&#3180;&#5819;&#2675;&#1002;&#3738;&#3433; </title>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="icon" href="../img/favicon.ico" type="image/x-icon"/>  
+
+        <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+        
+        <link rel="stylesheet" href="https://use.typekit.net/gwb8yvz.css">
+
+        <script>
+            jQuery(document).ready(function($) {
+    
+                $('.lightbox-trigger').click(function(e) {
+        
+                    //prevent default action (hyperlink)
+                    e.preventDefault();
+        
+                    //Get clicked link href
+                    var image_href = $(this).attr("href");
+        
+                    /* 	
+                    If the lightbox window HTML already exists in document, 
+                    change the img src to to match the href of whatever link was clicked
+        
+                    If the lightbox window HTML doesn't exists, create it and insert it.
+                    (This will only happen the first time around)
+                    */
+        
+                    if ($('#lightbox').length > 0) { // #lightbox exists
+            
+                        //place href as img src value
+                        $('#content').html('<img src="' + image_href + '" />');
+            
+                        //show lightbox window - you could use .show('fast') for a transition
+                        $('#lightbox').fadeIn('fast');
+                    }
+        
+                    else { //#lightbox does not exist - create and insert (runs 1st time only)
+            
+                        //create HTML markup for lightbox window
+                        var lightbox = 
+                        '<div id="lightbox">' +
+                            '<p>Click to close</p>' +
+                            '<div id="content">' + //insert clicked link's href into img src
+                                '<img src="' + image_href +'" />' +
+                            '</div>' +	
+                        '</div>';
+                
+                        //insert lightbox HTML into page
+                        $('body').append(lightbox);
+                    }
+        
+                });
+    
+                //Click anywhere on the page to get rid of lightbox window
+                $('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+                    $('#lightbox').fadeOut('fast');
+                });
+
+            });
+        </script>
+
+    </head>
+    
+    <body>
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="top"></div>
+        <div id="bottom"></div>
+        
+        <div id="lightbox">
+            <p>Click anywhere to close</p>
+            <div id="content">
+                <img src="#" />
+            </div><!--content-->
+        </div><!--lightbox-->
+
+        <div class="name">Max Nussenbaum</div>
+                
+        <div class="container">
+         
+            <div class="container-inner">
+                <a href="http://phenomic.ai/" class="img-link"><img src="img/phenomic.png"></a>
+                <h3>Phenomic AI</h3>
+                <p>Leveraging computer vision and high-content screening to develop the next wave of therapeutic antibodies. I designed and implemented the <a href="http://phenomic.ai/">landing page</a>.
+            </div><!--container-inner-->
+           
+            <div class="container-inner">
+                <a href="https://maymobility.com" class="img-link"><img src="img/may-mobility.png"></a>
+                <h3>May Mobility</h3>
+                <p>Fransforming cities through self-driving technology to create a greener, more accessible world. I designed and wrote copy for their <a href="may-mobility/may-deck-template.pdf">deck template</a> (PDF).</p>
+            </div><!--container-inner-->
+
+            <div class="container-inner">
+                <a href="https://yourparade.com" class="img-link"><img src="img/parade.png"></a>
+                <h3>Parade</h3>
+                <p>Sustainable, direct-to-consumer underwear brand. I was their lead front-end Shopify developer from January&ndash;August of 2020. <a href="https://yourparade.com">Visit site &rarr;</a></p>
+            </div><!--container-inner-->
+
+            <div class="container-inner">
+                <a href="https://www.dustyrobotics.com" class="img-link"><img src="img/dusty-robotics.png"></a>
+                <h3>Dusty Robotics</h3>
+                <p>Providing automated layout services to the construction industry. I designed and implemented the <a href="https://www.dustyrobotics.com/">landing page</a>.</p>
+            </div><!--container-inner-->
+
+            <div class="container-inner">
+                <img src="img/buildforce.png">
+                <h3>Buildforce</h3>
+                <p>Construction marketplace. I designed the <a href="buildforce/branding.png" class="lightbox-trigger">logo and branding</a>.</p>
+            </div><!--container-inner-->
+
+            <div class="container-inner">
+                <img src="img/nextchapter.png">
+                <h3>Next Chapter</h3>
+                <p>Non-profit that provides mentorships to founders moving on from their startups. I designed the <a href="next-chapter/logo.png" class="lightbox-trigger">logo and branding</a>.</p>
+            </div><!--container-inner-->
+
+            <div class="container-inner">
+                <img src="img/castle.png">
+                <h3>Castle</h3>
+                <p>My former startup, a tech-powered take on single family property management. As CEO, I grew the company to $1mm in annual revenue and raised $4mm from investors including Y Combinator and Khosla Ventures.</p>
+                <ul>
+                    <li><a href="http://castle.maxnuss.com">Website</a>. I designed and coded. (Archive of old site; some links may no longer work)</li>
+                    <li><a href="castle/Castle_Series_A_Deck.pdf">Series A deck</a> (PDF). I wrote and designed.</li>
+                    <li><a href="castle/Getting_Started_Guide.pdf">Getting Started Guide</a>. I wrote and designed.</li>
+                    <li><a href="#">TechCrunch article about us</a>, for the curious.</li>
+                </ul>
+            </div><!--container-inner-->
+
+            <div class="container-inner">
+                <a href="https://zulipchat.com/"><img src="img/zulip.png"></a>
+                <h3>Zulip</h3>
+                <p>Group chat for developers. I designed and developed this <a href="https://zulipchat.com/">website</a> based on existing brand and assets.</p>
+            </div><!--container-inner-->
+
+            <div class="container-inner">
+                <img src="img/medical-guardian.png">
+                <h3>Medical Guardian</h3>
+                <p>Medical device company. I designed this <a href="medical-guardian/Medical_Guardian_brochure.pdf">print brochure</a> (PDF) based on existing assets.</p>
+            </div><!--container-inner-->
+
+            <div class="container-inner">
+                <a href="http://funopticon.life/2019"><img src="img/funopticon.png"></a>
+                <h3>Funopticon</h3>
+                <p>My semi-annual adult summer camp for my friends and their friends. Check out the websites for <a href="https://funopticon.life/2019">2019</a> and <a href="https://funopticon.life">2021</a>.</p>
+            </div><!--container-inner-->
+            
+            <div class="container-inner">
+                <a href="https://maxnuss.com"><img src="img/maxnuss-dot-com.png"></a>
+                <h3>My personal website</h3>
+                <p>An example of <a href="https://maxnuss.com">the kind of work I create just for myself</a>. Don’t worry, most of what I do for clients is more professional than this.</p>
+            </div><!--container-inner-->
+        </div><!--container-->
+                            
+    </body>
+</html>
