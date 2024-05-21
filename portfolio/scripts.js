@@ -63,10 +63,12 @@ $('.container-inner').on('mousemove', function(event) {
 
 		});
 
+		// Lightbox
 		$('#lightbox').on('click', function() {
 				$('#lightbox').fadeOut('fast');
 		});
 		
+		// Name scroll effect
 		$(window).scroll(function() {
 			var scrollPos = $(window).scrollTop();
 			if (scrollPos > 200) {
@@ -87,7 +89,50 @@ $('.container-inner').on('mousemove', function(event) {
 					$('.name').removeClass('scrolled3');
 			}
 	});
-
-
 	
+	// Product modals
+	$('.container-inner--latch').click(function() {
+		$('.modal-latch').css('display','flex');
+		$('.modal-latch').css("opacity", 0).animate({ opacity: 1 }, 200);
+		$('body').addClass('no-scroll');
+	});
+	
+	$('.castle-product').click(function() {
+		$('.modal-castle').css('display','flex');
+		$('.modal-castle').css("opacity", 0).animate({ opacity: 1 }, 200);
+		$('body').addClass('no-scroll');
+	});
+	
+	$('.modal-close').click(function() {
+		$('.modal').animate({ opacity: 0 }, 200, function() {
+        $(this).css('display', 'none');
+    });
+    $('body').removeClass('no-scroll');
+	});
+
+	// Tag filtering
+	$('.tag-link').click(function() {
+		$(this).removeClass('tag-link--active');
+		$('.tag-link').addClass('tag-link--inactive');
+		$('.tag-link-all').addClass('tag-link--inactive');
+		$(this).removeClass('tag-link--inactive');
+		$(this).addClass('tag-link--active');
+		var tagClass = $(this).attr('class').split(' ').filter(function(c) {
+				return c.startsWith('tag-') && c !== 'tag-link';
+		})[0];
+					
+		$('.container-inner').each(function() {
+				if ($(this).find('.' + tagClass).length > 0) {
+						$(this).show();
+				} else {
+						$(this).hide();
+				}
+		});
+	});
+	
+	$('.tag-link-all').click(function() {
+		$(this).removeClass('tag-link--inactive');
+		$('.tag-link').removeClass('tag-link--inactive');
+		$('.container-inner').show();
+	});
 });
