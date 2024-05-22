@@ -1,3 +1,83 @@
+@font-face {
+    font-family: 'gooperblack';
+    src: url('fonts/gooper-black-webfont.woff2') format('woff2'),
+         url('fonts/gooper-black-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gooperblack_italic';
+    src: url('fonts/gooper-blackitalic-webfont.woff2') format('woff2'),
+         url('fonts/gooper-blackitalic-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'gooperbold';
+    src: url('fonts/gooper-bold-webfont.woff2') format('woff2'),
+         url('fonts/gooper-bold-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gooperbold_italic';
+    src: url('fonts/gooper-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/gooper-bolditalic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'gooperregular';
+    src: url('fonts/gooper-regular-webfont.woff2') format('woff2'),
+         url('fonts/gooper-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gooperregular_italic';
+    src: url('fonts/gooper-regularitalic-webfont.woff2') format('woff2'),
+         url('fonts/gooper-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'neue_regradebold-italic';
+    src: url('fonts/neue_regrade_bold_italic-webfont.woff2') format('woff2'),
+         url('fonts/neue_regrade_bold_italic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'neue_regradebold';
+    src: url('fonts/neue_regrade_bold-webfont.woff2') format('woff2'),
+         url('fonts/neue_regrade_bold-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neue_regraderegular-italic';
+    src: url('fonts/neue_regrade_regular_italic-webfont.woff2') format('woff2'),
+         url('fonts/neue_regrade_regular_italic-webfont.woff') format('woff');
+    font-weight: italic;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neue_regraderegular';
+    src: url('fonts/neue_regrade_regular-webfont.woff2') format('woff2'),
+         url('fonts/neue_regrade_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -5,12 +85,23 @@ html, body {
 	
 body {
 	background-color: #f7f7f7;
-	font-family: "museo-sans-1", "museo-sans-2", Museo Sans, Helvetica, Arial, sans-serif;, sans-serif;
 	font-weight: 300;
 	color: #222222;
 	line-height: 150%;
 	font-size: 1.3rem;
-	}
+}
+
+p {
+	font-family: "neue_regraderegular", Helvetica, Arial, sans-serif;
+}
+
+p em, p i {
+	font-family: 'neue_regraderegular-italic';
+}
+
+p strong, p b {
+	font-family: 'neue_regradebold';
+}
 
 ::selection {
 	background-color: #2980b9;
@@ -120,7 +211,7 @@ img {
 /* Pages */
 
 h1, h2, h3 {
-	font-family: "brandon-grotesque-1", "brandon-grotesque-2", Brandon Grotesque, Helvetica, Arial;
+	font-family: "gooperblack", 'Gooper Black', Helvetica, Arial;
 	line-height: 130%;
 	}
 	
@@ -195,8 +286,29 @@ p a:hover {
 	
 .page-container {
 	margin: 50px 0 0 230px;
+	padding-bottom: 50px;
 	max-width: 770px;
-	}
+	position: relative;
+}
+
+.page-container--talks {
+	max-width: 850px;
+}
+
+.back {
+	font-family: 'gooperblack';
+	font-size: 1rem;
+	position: absolute;
+	left: -150px;
+	top: 10px;
+	text-decoration: none;
+	color: #4d7194;
+	transition: all .2s ease;
+}
+
+.back:hover {
+	color: #58c09c;
+}
 	
 .page-container--standard-image {
 	width: 100%;
@@ -212,23 +324,21 @@ p a:hover {
 .talks-media-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
-	max-width: 750px;
+	grid-gap: 30px;
+	max-width: 900px;
 	text-align: center;
 }
 
 .talks-media-grid--item {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	line-height: 1.4;
 }
 	
 .talks-header {
-  margin-left: 10px;
 }
 
 .talk-box--image {
-	width: 350px;
-	max-width: 90%;
+	max-width: 100%;
 	border: 2px solid #bbb5bd;
 	transition: all .1s ease;
 	margin-bottom: -15px;
@@ -243,9 +353,52 @@ p a:hover {
 	display: block;
 	margin: 0 auto;
 	width: 500px;
-	border: 1px solid black;
+	border: 1px solid #bec9d3;
 }
 
+#top, #bottom, #left, #right {
+	position: fixed;
+	display: grid;
+	z-index: 100;
+	}
+
+#left, #right {
+	top: 0; bottom: 0;
+	width: 10px;
+	}
+
+#left {
+	left: 0;
+	grid-template-rows: 40% 60%;
+}
+
+#right {
+	right: 0;
+	grid-template-rows: 65% 35%;
+}
+	
+#top, #bottom {
+	left: 0; right: 0;
+	height: 10px;
+	}
+
+#top {
+	top: 0;
+	grid-template-columns: 60% 40%;
+}
+
+#bottom {
+	bottom: 0;
+	grid-template-columns: 35% 65%;
+}
+
+.green { background: #02c39a; }
+
+.yellow { background: #ebb85a; }
+
+.red { background: #d35e46; }
+
+.blue { background: #417297; }
 
 /* Responsive */
 @media (max-width: 1200px) {
@@ -268,6 +421,10 @@ p a:hover {
     width: 420px;
     height: 363px;
   }	
+  
+  .back {
+  	left: -100px;
+  }
 
 }
 
@@ -406,107 +563,14 @@ p a:hover {
 	.page-container {
 		margin: 30px 40px;
 		}
+	
+	.back {
+		position: relative;
+		left: 0;
+	}
 
 } /* end 600px */
 
-
-/* 10% */
-.tenpct-container {
-  width: 760px;
-  max-width: 80%;
-  font-family: Karla;
-  font-weight: 400;
-}
-
-.tenpct-header {
-  font-family: 'Playfair Display';
-  font-weight: 600;
-  font-size: 200%;
-}
-
-.tenpct-header span {
-  font-weight: 700;
-  color: #4E4C67;
-}
-
-.tenpct-container p {
-  max-width: 700px;
-}
-
-.tenpct-container ol {
-  max-width: 650px;
-}
-
-.tenpct-container ol li {
-  margin-bottom: 10px;
-}
-
-.footnote-container {
-  position: relative;
-}
-
-.footnote {
-  font-family: 'Old Standard TT';
-  line-height: 140%;
-  font-size: 1rem;
-  position: absolute;
-  border-left: 5px solid #38A3A5;
-  background: #f0f0f0;
-  padding: 6px 0 6px 15px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  z-index: 100;
-  width: 400px;
-  left: 720px;
-}
-
-.footnote-1 {
-  top: 50px;
-}
-
-.footnote-2 {
-  top: 50px;
-}
-
-.footnote-marker {
-  color: #38A3A5;
-  font-family: 'Concert One', cursive; 
-  font-size: 60%;
-  position: relative;
-  top: -7px;
-}
-
-.footnote span {
-  color: #38A3A5;
-  font-family: 'Concert One', cursive;
-}
-
-@media (max-width: 1370px) {
-  .footnote {
-    width: 300px;
-  }
-}
-
-@media (max-width: 1250px) {
-  .tenpct-container {
-    width: 600px
-  }
-  
-  .footnote {
-    left: 610px;
-    width: 200px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .footnote {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: auto;
-  }
-}
 
 @media (max-width: 700px) {
   .new-yorker-caption {
