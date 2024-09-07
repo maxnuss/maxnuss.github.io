@@ -159,10 +159,19 @@ img {
 	background-image: url('img/candy.png');
 }
 
-.home-link--upside {
-	width: 650px;
-	height: 133px;
-	background-image: url('img/upside.png');
+.home-link--stripe {
+	width: 640px;
+	height: 88px;
+	background-image: url('img/stripe.png');
+}
+
+.home-link--dating {
+	width: 610px;
+	height: 58px;
+	background-image: url('img/dating.png');
+	margin-top: 0;
+	position: relative;
+	left: 24px;
 }
 
 .home-link--oversubscribed {
@@ -509,6 +518,15 @@ p a:hover {
 		margin: 20px 120px;
 		}
 		
+		.home-link--stripe {
+			width: 600px;
+			height: 83px;
+		}
+		
+		.home-link--dating {
+			width: 580px;
+			height: 55px;
+		}
 }
 
 @media (max-width: 660px) {	
@@ -535,6 +553,16 @@ p a:hover {
 	.home-link--talk-media {
 		width: 450px;
 		height: 77px;
+	}
+	
+	.home-link--stripe {
+		width: 500px;
+		height: 69px;
+	}
+	
+	.home-link--dating {
+		width: 480px;
+		height: 45px;
 	}
 	
 	.home--signature {
@@ -614,4 +642,16 @@ p a:hover {
 		width: 300px;
 		height: 63px;
 	}
+	
+	.home-link--stripe {
+		width: 310px;
+		height: 46px;
+	}
+	
+	.home-link--dating {
+		width: 310px;
+		height: 29px;
+		left: 10px;
+	}
+
 }
