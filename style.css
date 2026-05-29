@@ -178,6 +178,7 @@ img {
 	width: 642px;
 	height: 120px;
 	background-image: url('img/oversubscribed.png');
+	display: none;
 }
 
 .home-link--new-yorker {
@@ -195,6 +196,7 @@ img {
 	width: 790px;
 	height: 135px;
 	background-image: url('img/talk-media.png');
+	display: none;
 }
 
 .home-link--about {
